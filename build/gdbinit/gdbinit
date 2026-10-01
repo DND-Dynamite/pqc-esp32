@@ -1,0 +1,2 @@
+source /home/lenovo/pqc_esp32/build/gdbinit/symbols
+source /home/lenovo/pqc_esp32/build/gdbinit/connect

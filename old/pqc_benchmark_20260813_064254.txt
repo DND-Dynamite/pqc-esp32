@@ -1,0 +1,174 @@
+Executing action: monitor
+Serial port /dev/ttyUSB0
+Connecting....
+Detecting chip type... ESP32
+Running idf_monitor in directory /home/lenovo/pqc_esp32
+Executing "/home/lenovo/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/lenovo/esp-workspace/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/lenovo/pqc_esp32/build/pqc_esp32.elf -m '/home/lenovo/.espressif/python_env/idf5.3_py3.12_env/bin/python' '/home/lenovo/esp-workspace/esp-idf/tools/idf.py'"...
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15660
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.5-1125-g8374e89332f 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug 13 2026 06:25:35[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=091c4h ( 37316) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=000191ec vaddr=3ffb0000 size=02784h ( 10116) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0001b978 vaddr=40080000 size=046a0h ( 18080) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1187ch ( 71804) map[0m
+[0;32mI (158) esp_image: segment 4: paddr=000318a4 vaddr=400846a0 size=086e0h ( 34528) load[0m
+[0;32mI (178) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (191) cpu_start: Multicore app[0m
+[0;32mI (199) cpu_start: Pro cpu start user code[0m
+[0;32mI (199) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (199) app_init: Application information:[0m
+[0;32mI (202) app_init: Project name:     pqc_esp32[0m
+[0;32mI (207) app_init: App version:      1[0m
+[0;32mI (212) app_init: Compile time:     Aug 13 2026 06:22:49[0m
+[0;32mI (218) app_init: ELF file SHA256:  95d5ddcd7...[0m
+[0;32mI (223) app_init: ESP-IDF:          v5.3.5-1125-g8374e89332f[0m
+[0;32mI (229) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (234) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (239) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (244) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (251) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (257) heap_init: At 3FFB3078 len 0002CF88 (179 KiB): DRAM[0m
+[0;32mI (263) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (270) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (276) heap_init: At 4008CD80 len 00013280 (76 KiB): IRAM[0m
+[0;32mI (284) spi_flash: detected chip: generic[0m
+[0;32mI (287) spi_flash: flash io: dio[0m
+[0;33mW (291) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (305) main_task: Started on CPU0[0m
+[0;32mI (315) main_task: Calling app_main()[0m
+[0;32mI (315) PQC_BENCH: ================================================[0m
+[0;32mI (315) PQC_BENCH:   Phase 3 – PQC Benchmark with Live Mock Sensors[0m
+[0;32mI (325) PQC_BENCH:   CPU        : 160 MHz[0m
+[0;32mI (325) PQC_BENCH:   Free heap  : 241952 bytes[0m
+[0;32mI (335) PQC_BENCH:   Iterations : 1000[0m
+[0;32mI (335) PQC_BENCH: ================================================[0m
+[0;32mI (345) PQC_BENCH: 
+========== ML-KEM-512 (Session Key) ==========[0m
+[0;32mI (355) PQC_BENCH: Sensor  seq=1  T=21.0°C  H=52.6%  motion=1  door=0  batt=3222 mV[0m
+[0;32mI (685) PQC_BENCH: Sensor  seq=11  T=20.0°C  H=58.1%  motion=0  door=0  batt=3174 mV[0m
+[0;32mI (1005) PQC_BENCH: Sensor  seq=21  T=20.4°C  H=62.6%  motion=0  door=1  batt=3168 mV[0m
+[0;32mI (1315) PQC_BENCH: Sensor  seq=31  T=24.2°C  H=54.1%  motion=0  door=0  batt=3105 mV[0m
+[0;32mI (1645) PQC_BENCH: Sensor  seq=41  T=21.4°C  H=58.0%  motion=0  door=0  batt=3149 mV[0m
+[0;32mI (1965) PQC_BENCH: Sensor  seq=51  T=24.1°C  H=58.3%  motion=1  door=0  batt=3119 mV[0m
+[0;32mI (2275) PQC_BENCH: Sensor  seq=61  T=21.3°C  H=64.2%  motion=0  door=0  batt=3249 mV[0m
+[0;32mI (2615) PQC_BENCH: Sensor  seq=71  T=23.4°C  H=59.1%  motion=0  door=0  batt=3282 mV[0m
+[0;32mI (2925) PQC_BENCH: Sensor  seq=81  T=22.8°C  H=55.3%  motion=0  door=0  batt=3281 mV[0m
+[0;32mI (3255) PQC_BENCH: Sensor  seq=91  T=23.1°C  H=60.8%  motion=1  door=0  batt=3145 mV[0m
+[0;32mI (3575) PQC_BENCH: Sensor  seq=101  T=20.4°C  H=61.2%  motion=0  door=0  batt=3159 mV[0m
+[0;32mI (3895) PQC_BENCH: Sensor  seq=111  T=21.8°C  H=47.9%  motion=1  door=0  batt=3173 mV[0m
+[0;32mI (4225) PQC_BENCH: Sensor  seq=121  T=20.5°C  H=56.2%  motion=0  door=0  batt=3198 mV[0m
+[0;32mI (4555) PQC_BENCH: Sensor  seq=131  T=20.2°C  H=64.4%  motion=0  door=0  batt=3200 mV[0m
+[0;32mI (4875) PQC_BENCH: Sensor  seq=141  T=22.3°C  H=55.9%  motion=0  door=0  batt=3184 mV[0m
+[0;32mI (5195) PQC_BENCH: Sensor  seq=151  T=21.9°C  H=50.1%  motion=0  door=1  batt=3245 mV[0m
+[0;32mI (5515) PQC_BENCH: Sensor  seq=161  T=21.4°C  H=46.1%  motion=0  door=0  batt=3102 mV[0m
+[0;32mI (5835) PQC_BENCH: Sensor  seq=171  T=20.2°C  H=54.5%  motion=0  door=0  batt=3102 mV[0m
+[0;32mI (6165) PQC_BENCH: Sensor  seq=181  T=21.0°C  H=59.6%  motion=0  door=0  batt=3264 mV[0m
+[0;32mI (6475) PQC_BENCH: Sensor  seq=191  T=20.5°C  H=47.9%  motion=0  door=0  batt=3224 mV[0m
+[0;32mI (6795) PQC_BENCH: Sensor  seq=201  T=21.0°C  H=62.5%  motion=0  door=0  batt=3203 mV[0m
+[0;32mI (7125) PQC_BENCH: Sensor  seq=211  T=22.9°C  H=56.8%  motion=0  door=0  batt=3260 mV[0m
+[0;32mI (7445) PQC_BENCH: Sensor  seq=221  T=20.4°C  H=55.6%  motion=0  door=0  batt=3165 mV[0m
+[0;32mI (7775) PQC_BENCH: Sensor  seq=231  T=19.5°C  H=64.4%  motion=0  door=0  batt=3249 mV[0m
+[0;32mI (8095) PQC_BENCH: Sensor  seq=241  T=23.4°C  H=56.6%  motion=1  door=0  batt=3221 mV[0m
+[0;32mI (8415) PQC_BENCH: Sensor  seq=251  T=21.2°C  H=52.4%  motion=0  door=0  batt=3100 mV[0m
+[0;32mI (8735) PQC_BENCH: Sensor  seq=261  T=22.5°C  H=51.4%  motion=0  door=0  batt=3123 mV[0m
+[0;32mI (9065) PQC_BENCH: Sensor  seq=271  T=22.9°C  H=49.4%  motion=0  door=0  batt=3290 mV[0m
+[0;32mI (9395) PQC_BENCH: Sensor  seq=281  T=21.3°C  H=56.6%  motion=0  door=0  batt=3117 mV[0m
+[0;32mI (9725) PQC_BENCH: Sensor  seq=291  T=21.0°C  H=48.0%  motion=0  door=0  batt=3101 mV[0m
+[0;32mI (10035) PQC_BENCH: Sensor  seq=301  T=23.0°C  H=56.6%  motion=0  door=0  batt=3235 mV[0m
+[0;32mI (10365) PQC_BENCH: Sensor  seq=311  T=21.2°C  H=58.4%  motion=0  door=0  batt=3194 mV[0m
+[0;32mI (10675) PQC_BENCH: Sensor  seq=321  T=21.4°C  H=55.1%  motion=0  door=1  batt=3179 mV[0m
+[0;32mI (11005) PQC_BENCH: Sensor  seq=331  T=21.6°C  H=54.3%  motion=1  door=0  batt=3252 mV[0m
+[0;32mI (11325) PQC_BENCH: Sensor  seq=341  T=22.6°C  H=55.1%  motion=0  door=0  batt=3153 mV[0m
+[0;32mI (11635) PQC_BENCH: Sensor  seq=351  T=20.8°C  H=62.9%  motion=0  door=0  batt=3214 mV[0m
+[0;32mI (11955) PQC_BENCH: Sensor  seq=361  T=23.1°C  H=46.7%  motion=0  door=1  batt=3232 mV[0m
+[0;32mI (12285) PQC_BENCH: Sensor  seq=371  T=21.3°C  H=45.4%  motion=1  door=1  batt=3128 mV[0m
+[0;32mI (12605) PQC_BENCH: Sensor  seq=381  T=21.7°C  H=47.6%  motion=0  door=0  batt=3117 mV[0m
+[0;32mI (12935) PQC_BENCH: Sensor  seq=391  T=20.2°C  H=46.5%  motion=0  door=0  batt=3143 mV[0m
+[0;32mI (13255) PQC_BENCH: Sensor  seq=401  T=21.9°C  H=59.7%  motion=1  door=0  batt=3229 mV[0m
+[0;32mI (13585) PQC_BENCH: Sensor  seq=411  T=22.6°C  H=47.5%  motion=0  door=0  batt=3226 mV[0m
+[0;32mI (13915) PQC_BENCH: Sensor  seq=421  T=20.4°C  H=62.7%  motion=0  door=0  batt=3160 mV[0m
+[0;32mI (14225) PQC_BENCH: Sensor  seq=431  T=20.8°C  H=51.1%  motion=0  door=0  batt=3162 mV[0m
+[0;32mI (14565) PQC_BENCH: Sensor  seq=441  T=20.9°C  H=53.0%  motion=0  door=0  batt=3266 mV[0m
+[0;32mI (14885) PQC_BENCH: Sensor  seq=451  T=22.2°C  H=56.1%  motion=0  door=0  batt=3158 mV[0m
+[0;32mI (15195) PQC_BENCH: Sensor  seq=461  T=23.8°C  H=50.4%  motion=0  door=1  batt=3222 mV[0m
+[0;32mI (15515) PQC_BENCH: Sensor  seq=471  T=21.6°C  H=55.4%  motion=0  door=0  batt=3299 mV[0m
+[0;32mI (15825) PQC_BENCH: Sensor  seq=481  T=23.5°C  H=56.0%  motion=0  door=0  batt=3123 mV[0m
+[0;32mI (16155) PQC_BENCH: Sensor  seq=491  T=22.6°C  H=54.0%  motion=1  door=0  batt=3278 mV[0m
+[0;32mI (16475) PQC_BENCH: Sensor  seq=501  T=19.5°C  H=57.0%  motion=0  door=1  batt=3157 mV[0m
+[0;32mI (16785) PQC_BENCH: Sensor  seq=511  T=20.3°C  H=57.9%  motion=0  door=0  batt=3197 mV[0m
+[0;32mI (17115) PQC_BENCH: Sensor  seq=521  T=20.1°C  H=49.5%  motion=0  door=0  batt=3118 mV[0m
+[0;32mI (17445) PQC_BENCH: Sensor  seq=531  T=24.1°C  H=58.4%  motion=0  door=0  batt=3266 mV[0m
+[0;32mI (17755) PQC_BENCH: Sensor  seq=541  T=22.9°C  H=55.0%  motion=0  door=0  batt=3234 mV[0m
+[0;32mI (18095) PQC_BENCH: Sensor  seq=551  T=23.4°C  H=63.7%  motion=1  door=0  batt=3213 mV[0m
+[0;32mI (18405) PQC_BENCH: Sensor  seq=561  T=22.4°C  H=48.6%  motion=0  door=0  batt=3271 mV[0m
+[0;32mI (18745) PQC_BENCH: Sensor  seq=571  T=20.6°C  H=53.6%  motion=0  door=0  batt=3216 mV[0m
+[0;32mI (19085) PQC_BENCH: Sensor  seq=581  T=23.8°C  H=62.0%  motion=0  door=0  batt=3133 mV[0m
+[0;32mI (19405) PQC_BENCH: Sensor  seq=591  T=22.6°C  H=50.0%  motion=0  door=0  batt=3164 mV[0m
+[0;32mI (19735) PQC_BENCH: Sensor  seq=601  T=22.1°C  H=53.5%  motion=0  door=0  batt=3243 mV[0m
+[0;32mI (20065) PQC_BENCH: Sensor  seq=611  T=24.1°C  H=59.6%  motion=0  door=0  batt=3159 mV[0m
+[0;32mI (20395) PQC_BENCH: Sensor  seq=621  T=20.2°C  H=57.9%  motion=1  door=0  batt=3154 mV[0m
+[0;32mI (20725) PQC_BENCH: Sensor  seq=631  T=24.4°C  H=46.7%  motion=0  door=0  batt=3220 mV[0m
+[0;32mI (21045) PQC_BENCH: Sensor  seq=641  T=23.8°C  H=56.6%  motion=0  door=0  batt=3296 mV[0m
+[0;32mI (21365) PQC_BENCH: Sensor  seq=651  T=24.3°C  H=62.3%  motion=0  door=0  batt=3254 mV[0m
+[0;32mI (21685) PQC_BENCH: Sensor  seq=661  T=20.6°C  H=61.2%  motion=0  door=0  batt=3121 mV[0m
+[0;32mI (22005) PQC_BENCH: Sensor  seq=671  T=21.9°C  H=52.3%  motion=1  door=0  batt=3146 mV[0m
+[0;32mI (22335) PQC_BENCH: Sensor  seq=681  T=19.5°C  H=62.8%  motion=0  door=0  batt=3186 mV[0m
+[0;32mI (22665) PQC_BENCH: Sensor  seq=691  T=24.1°C  H=56.8%  motion=0  door=0  batt=3207 mV[0m
+[0;32mI (22985) PQC_BENCH: Sensor  seq=701  T=20.2°C  H=46.6%  motion=0  door=0  batt=3210 mV[0m
+[0;32mI (23335) PQC_BENCH: Sensor  seq=711  T=20.6°C  H=52.3%  motion=0  door=0  batt=3210 mV[0m
+[0;32mI (23655) PQC_BENCH: Sensor  seq=721  T=24.2°C  H=48.0%  motion=0  door=1  batt=3291 mV[0m
+[0;32mI (23995) PQC_BENCH: Sensor  seq=731  T=21.8°C  H=48.3%  motion=0  door=0  batt=3251 mV[0m
+[0;32mI (24325) PQC_BENCH: Sensor  seq=741  T=20.5°C  H=47.0%  motion=0  door=0  batt=3107 mV[0m
+[0;32mI (24645) PQC_BENCH: Sensor  seq=751  T=24.3°C  H=61.9%  motion=1  door=0  batt=3232 mV[0m
+[0;32mI (24975) PQC_BENCH: Sensor  seq=761  T=20.1°C  H=54.2%  motion=0  door=0  batt=3119 mV[0m
+[0;32mI (25315) PQC_BENCH: Sensor  seq=771  T=20.0°C  H=45.1%  motion=0  door=0  batt=3125 mV[0m
+[0;32mI (25625) PQC_BENCH: Sensor  seq=781  T=23.4°C  H=61.5%  motion=0  door=0  batt=3224 mV[0m
+[0;32mI (25945) PQC_BENCH: Sensor  seq=791  T=22.8°C  H=55.3%  motion=0  door=0  batt=3247 mV[0m
+[0;32mI (26255) PQC_BENCH: Sensor  seq=801  T=24.1°C  H=53.4%  motion=0  door=0  batt=3100 mV[0m
+[0;32mI (26575) PQC_BENCH: Sensor  seq=811  T=20.5°C  H=62.9%  motion=0  door=0  batt=3144 mV[0m
+[0;32mI (26895) PQC_BENCH: Sensor  seq=821  T=19.8°C  H=60.0%  motion=0  door=0  batt=3132 mV[0m
+[0;32mI (27205) PQC_BENCH: Sensor  seq=831  T=22.4°C  H=55.3%  motion=0  door=0  batt=3158 mV[0m
+[0;32mI (27545) PQC_BENCH: Sensor  seq=841  T=21.5°C  H=62.3%  motion=0  door=0  batt=3273 mV[0m
+[0;32mI (27865) PQC_BENCH: Sensor  seq=851  T=22.1°C  H=50.7%  motion=0  door=0  batt=3177 mV[0m
+[0;32mI (28175) PQC_BENCH: Sensor  seq=861  T=20.4°C  H=51.4%  motion=0  door=0  batt=3193 mV[0m
+[0;32mI (28495) PQC_BENCH: Sensor  seq=871  T=20.3°C  H=54.9%  motion=0  door=0  batt=3231 mV[0m
+[0;32mI (28815) PQC_BENCH: Sensor  seq=881  T=20.2°C  H=46.7%  motion=1  door=0  batt=3132 mV[0m
+[0;32mI (29135) PQC_BENCH: Sensor  seq=891  T=23.6°C  H=56.2%  motion=0  door=0  batt=3290 mV[0m
+[0;32mI (29455) PQC_BENCH: Sensor  seq=901  T=20.5°C  H=62.1%  motion=0  door=0  batt=3188 mV[0m
+[0;32mI (29765) PQC_BENCH: Sensor  seq=911  T=21.7°C  H=50.6%  motion=0  door=0  batt=3137 mV[0m
+[0;32mI (30085) PQC_BENCH: Sensor  seq=921  T=24.4°C  H=49.8%  motion=0  door=0  batt=3222 mV[0m
+[0;32mI (30405) PQC_BENCH: Sensor  seq=931  T=24.0°C  H=47.2%  motion=0  door=0  batt=3218 mV[0m
+[0;32mI (30715) PQC_BENCH: Sensor  seq=941  T=23.5°C  H=45.4%  motion=0  door=1  batt=3236 mV[0m
+[0;32mI (31035) PQC_BENCH: Sensor  seq=951  T=21.5°C  H=46.8%  motion=1  door=0  batt=3269 mV[0m
+[0;32mI (31345) PQC_BENCH: Sensor  seq=961  T=23.5°C  H=53.7%  motion=0  door=0  batt=3171 mV[0m
+[0;32mI (31665) PQC_BENCH: Sensor  seq=971  T=23.4°C  H=59.3%  motion=0  door=0  batt=3264 mV[0m
+[0;32mI (31985) PQC_BENCH: Sensor  seq=981  T=22.0°C  H=61.0%  motion=0  door=0  batt=3272 mV[0m
+[0;32mI (32305) PQC_BENCH: Sensor  seq=991  T=21.4°C  H=63.4%  motion=0  door=0  batt=3143 mV[0m
+[0;32mI (32615) PQC_BENCH: Operation                |   Avg us |     Min |     Max |  Avg cycles | HeapΔ[0m
+[0;32mI (32625) PQC_BENCH: ML-KEM-512 KeyGen        |   8227.9 |    8167 |    9199 |     1316570 | 4294901192[0m
+[0;32mI (32625) PQC_BENCH: ML-KEM-512 Encaps        |   9785.7 |    9741 |   10036 | 18446744070980412 | 4294901192[0m
+[0;32mI (32635) PQC_BENCH: ML-KEM-512 Decaps        |  11966.8 |   11921 |   12190 |     1914804 | 4294901192[0m

@@ -1,0 +1,169 @@
+Executing action: monitor
+Serial port /dev/ttyUSB0
+Connecting.....
+Detecting chip type... ESP32
+Running idf_monitor in directory /home/lenovo/pqc_esp32
+Executing "/home/lenovo/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/lenovo/esp-workspace/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/lenovo/pqc_esp32/build/pqc_esp32.elf -m '/home/lenovo/.espressif/python_env/idf5.3_py3.12_env/bin/python' '/home/lenovo/esp-workspace/esp-idf/tools/idf.py'"...
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15660
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.5-1125-g8374e89332f 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug 18 2026 10:15:06[0m
+[0;32mI (33) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v3.1[0m
+[0;32mI (41) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a7e4h ( 42980) map[0m
+[0;32mI (121) esp_image: segment 1: paddr=0001a80c vaddr=3ffb0000 size=027c4h ( 10180) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001cfd8 vaddr=40080000 size=03040h ( 12352) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1aec4h (110276) map[0m
+[0;32mI (173) esp_image: segment 4: paddr=0003aeec vaddr=40083040 size=09d78h ( 40312) load[0m
+[0;32mI (195) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (195) boot: Disabling RNG early entropy source...[0m
+[0;32mI (208) cpu_start: Multicore app[0m
+[0;32mI (216) cpu_start: Pro cpu start user code[0m
+[0;32mI (216) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (216) app_init: Application information:[0m
+[0;32mI (219) app_init: Project name:     pqc_esp32[0m
+[0;32mI (224) app_init: App version:      1[0m
+[0;32mI (228) app_init: Compile time:     Aug 18 2026 10:14:54[0m
+[0;32mI (234) app_init: ELF file SHA256:  03c6d00aa...[0m
+[0;32mI (240) app_init: ESP-IDF:          v5.3.5-1125-g8374e89332f[0m
+[0;32mI (246) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (251) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (256) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (261) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (268) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (274) heap_init: At 3FFB30C0 len 0002CF40 (179 KiB): DRAM[0m
+[0;32mI (280) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (286) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (293) heap_init: At 4008CDB8 len 00013248 (76 KiB): IRAM[0m
+[0;32mI (301) spi_flash: detected chip: generic[0m
+[0;32mI (304) spi_flash: flash io: dio[0m
+[0;33mW (308) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (322) main_task: Started on CPU0[0m
+[0;32mI (332) main_task: Calling app_main()[0m
+[0;32mI (332) PQC_BENCH: =======================================================[0m
+[0;32mI (332) PQC_BENCH:  ESP32 Hybrid Cryptography Benchmark Suite[0m
+[0;32mI (342) PQC_BENCH: =======================================================[0m
+[0;32mI (342) PQC_BENCH:  CPU Frequency : 160 MHz[0m
+[0;32mI (352) PQC_BENCH:  Free Heap     : 241880 bytes[0m
+[0;32mI (352) PQC_BENCH:  Min Free Heap : 241880 bytes[0m
+[0;32mI (362) PQC_BENCH:  Running on    : Core 0[0m
+[0;32mI (362) PQC_BENCH:  Iterations    : 1000[0m
+[0;32mI (372) PQC_BENCH: =======================================================[0m
+[0;32mI (382) PQC_BENCH: >> Test Case: Optimization Comparison Suite[0m
+[0;32mI (382) PQC_BENCH: --- 1/3 Baseline (no dual-core, no HW accel) ---[0m
+[0;32mI (692) PQC_BENCH: 
+========== Phase 4: Optimized Hybrid ECDH-P256 + ML-KEM-512 ==========[0m
+[0;32mI (692) PQC_BENCH: Dual-Core        : ENABLED[0m
+[0;32mI (692) PQC_BENCH: HW Accelerators  : ENABLED[0m
+[0;32mI (692) PQC_BENCH: Iterations       : 1000[0m
+[0;32mI (4452) BENCH: Phase4-Hybrid iter=1/1000 | KeyGen=196086 us | Encaps=384573 us | Decaps=199684 us | heap=220748[0m
+[0;32mI (5232) BENCH: Phase4-Hybrid iter=2/1000 | KeyGen=196175 us | Encaps=385122 us | Decaps=200007 us | heap=220748[0m
+[0;32mI (6012) BENCH: Phase4-Hybrid iter=3/1000 | KeyGen=196619 us | Encaps=385120 us | Decaps=200024 us | heap=220748[0m
+[0;32mI (6792) BENCH: Phase4-Hybrid iter=4/1000 | KeyGen=196133 us | Encaps=384684 us | Decaps=200023 us | heap=220748[0m
+[0;32mI (7572) BENCH: Phase4-Hybrid iter=5/1000 | KeyGen=196315 us | Encaps=384768 us | Decaps=199917 us | heap=220748[0m
+[0;32mI (8352) BENCH: Phase4-Hybrid iter=6/1000 | KeyGen=196348 us | Encaps=384751 us | Decaps=199714 us | heap=220748[0m
+[0;32mI (9142) BENCH: Phase4-Hybrid iter=7/1000 | KeyGen=196221 us | Encaps=384765 us | Decaps=199804 us | heap=220748[0m
+[0;32mI (9922) BENCH: Phase4-Hybrid iter=8/1000 | KeyGen=196292 us | Encaps=384409 us | Decaps=199560 us | heap=220748[0m
+[0;32mI (10702) BENCH: Phase4-Hybrid iter=9/1000 | KeyGen=196363 us | Encaps=384671 us | Decaps=199782 us | heap=220748[0m
+[0;32mI (11482) BENCH: Phase4-Hybrid iter=10/1000 | KeyGen=196258 us | Encaps=384863 us | Decaps=199917 us | heap=220748[0m
+[0;32mI (12262) BENCH: Phase4-Hybrid iter=11/1000 | KeyGen=196255 us | Encaps=384526 us | Decaps=199749 us | heap=220748[0m
+[0;32mI (13042) BENCH: Phase4-Hybrid iter=12/1000 | KeyGen=196333 us | Encaps=384551 us | Decaps=199543 us | heap=220748[0m
+[0;32mI (13822) BENCH: Phase4-Hybrid iter=13/1000 | KeyGen=196437 us | Encaps=384798 us | Decaps=199981 us | heap=220748[0m
+[0;32mI (14612) BENCH: Phase4-Hybrid iter=14/1000 | KeyGen=196283 us | Encaps=384630 us | Decaps=199731 us | heap=220748[0m
+[0;32mI (15392) BENCH: Phase4-Hybrid iter=15/1000 | KeyGen=196379 us | Encaps=384780 us | Decaps=199761 us | heap=220748[0m
+[0;32mI (16172) BENCH: Phase4-Hybrid iter=16/1000 | KeyGen=196356 us | Encaps=384765 us | Decaps=199810 us | heap=220748[0m
+[0;32mI (16952) BENCH: Phase4-Hybrid iter=17/1000 | KeyGen=196415 us | Encaps=384780 us | Decaps=199683 us | heap=220748[0m
+[0;32mI (17732) BENCH: Phase4-Hybrid iter=18/1000 | KeyGen=196300 us | Encaps=384855 us | Decaps=199722 us | heap=220748[0m
+[0;32mI (18512) BENCH: Phase4-Hybrid iter=19/1000 | KeyGen=196298 us | Encaps=384769 us | Decaps=199841 us | heap=220748[0m
+[0;32mI (19292) BENCH: Phase4-Hybrid iter=20/1000 | KeyGen=196167 us | Encaps=384599 us | Decaps=199855 us | heap=220748[0m
+[0;32mI (20082) BENCH: Phase4-Hybrid iter=21/1000 | KeyGen=196240 us | Encaps=384798 us | Decaps=200089 us | heap=220748[0m
+[0;32mI (20862) BENCH: Phase4-Hybrid iter=22/1000 | KeyGen=196293 us | Encaps=384620 us | Decaps=199763 us | heap=220748[0m
+[0;32mI (21642) BENCH: Phase4-Hybrid iter=23/1000 | KeyGen=196051 us | Encaps=384789 us | Decaps=200042 us | heap=220748[0m
+[0;32mI (22422) BENCH: Phase4-Hybrid iter=24/1000 | KeyGen=196395 us | Encaps=384522 us | Decaps=199667 us | heap=220748[0m
+[0;32mI (23202) BENCH: Phase4-Hybrid iter=25/1000 | KeyGen=196397 us | Encaps=384798 us | Decaps=199981 us | heap=220748[0m
+[0;32mI (23982) BENCH: Phase4-Hybrid iter=26/1000 | KeyGen=196348 us | Encaps=384775 us | Decaps=200046 us | heap=220748[0m
+[0;32mI (24762) BENCH: Phase4-Hybrid iter=27/1000 | KeyGen=196270 us | Encaps=384505 us | Decaps=199980 us | heap=220748[0m
+[0;32mI (25552) BENCH: Phase4-Hybrid iter=28/1000 | KeyGen=196299 us | Encaps=384617 us | Decaps=199615 us | heap=220748[0m
+[0;32mI (26332) BENCH: Phase4-Hybrid iter=29/1000 | KeyGen=196346 us | Encaps=384736 us | Decaps=200018 us | heap=220748[0m
+[0;32mI (27112) BENCH: Phase4-Hybrid iter=30/1000 | KeyGen=196377 us | Encaps=384643 us | Decaps=199687 us | heap=220748[0m
+[0;32mI (27892) BENCH: Phase4-Hybrid iter=31/1000 | KeyGen=196341 us | Encaps=384712 us | Decaps=199789 us | heap=220748[0m
+[0;32mI (28672) BENCH: Phase4-Hybrid iter=32/1000 | KeyGen=196506 us | Encaps=384490 us | Decaps=199767 us | heap=220748[0m
+[0;32mI (29452) BENCH: Phase4-Hybrid iter=33/1000 | KeyGen=196446 us | Encaps=384718 us | Decaps=199912 us | heap=220748[0m
+[0;32mI (30232) BENCH: Phase4-Hybrid iter=34/1000 | KeyGen=196259 us | Encaps=384586 us | Decaps=199810 us | heap=220748[0m
+[0;32mI (31022) BENCH: Phase4-Hybrid iter=35/1000 | KeyGen=195985 us | Encaps=384721 us | Decaps=199719 us | heap=220748[0m
+[0;32mI (31802) BENCH: Phase4-Hybrid iter=36/1000 | KeyGen=196373 us | Encaps=384893 us | Decaps=199812 us | heap=220748[0m
+[0;32mI (32582) BENCH: Phase4-Hybrid iter=37/1000 | KeyGen=196214 us | Encaps=384825 us | Decaps=199843 us | heap=220748[0m
+[0;32mI (33362) BENCH: Phase4-Hybrid iter=38/1000 | KeyGen=196291 us | Encaps=384819 us | Decaps=199780 us | heap=220748[0m
+[0;32mI (34142) BENCH: Phase4-Hybrid iter=39/1000 | KeyGen=196533 us | Encaps=384914 us | Decaps=200042 us | heap=220748[0m
+[0;32mI (34922) BENCH: Phase4-Hybrid iter=40/1000 | KeyGen=196215 us | Encaps=385299 us | Decaps=200192 us | heap=220748[0m
+[0;32mI (35712) BENCH: Phase4-Hybrid iter=41/1000 | KeyGen=196404 us | Encaps=384419 us | Decaps=199919 us | heap=220748[0m
+[0;32mI (36492) BENCH: Phase4-Hybrid iter=42/1000 | KeyGen=196232 us | Encaps=384544 us | Decaps=199702 us | heap=220748[0m
+[0;32mI (37272) BENCH: Phase4-Hybrid iter=43/1000 | KeyGen=196407 us | Encaps=384891 us | Decaps=200013 us | heap=220748[0m
+[0;32mI (38052) BENCH: Phase4-Hybrid iter=44/1000 | KeyGen=196294 us | Encaps=384521 us | Decaps=199839 us | heap=220748[0m
+[0;32mI (38832) BENCH: Phase4-Hybrid iter=45/1000 | KeyGen=196212 us | Encaps=385022 us | Decaps=199811 us | heap=220748[0m
+[0;32mI (39612) BENCH: Phase4-Hybrid iter=46/1000 | KeyGen=196122 us | Encaps=384468 us | Decaps=199877 us | heap=220748[0m
+[0;32mI (40392) BENCH: Phase4-Hybrid iter=47/1000 | KeyGen=196367 us | Encaps=384777 us | Decaps=199694 us | heap=220748[0m
+[0;32mI (41182) BENCH: Phase4-Hybrid iter=48/1000 | KeyGen=196327 us | Encaps=384767 us | Decaps=199924 us | heap=220748[0m
+[0;32mI (41962) BENCH: Phase4-Hybrid iter=49/1000 | KeyGen=196216 us | Encaps=384544 us | Decaps=199641 us | heap=220748[0m
+[0;32mI (42742) BENCH: Phase4-Hybrid iter=50/1000 | KeyGen=196237 us | Encaps=384949 us | Decaps=199883 us | heap=220748[0m
+[0;32mI (43522) BENCH: Phase4-Hybrid iter=51/1000 | KeyGen=196534 us | Encaps=384798 us | Decaps=199625 us | heap=220748[0m
+[0;32mI (44302) BENCH: Phase4-Hybrid iter=52/1000 | KeyGen=196290 us | Encaps=384960 us | Decaps=199680 us | heap=220748[0m
+[0;32mI (45082) BENCH: Phase4-Hybrid iter=53/1000 | KeyGen=196194 us | Encaps=384759 us | Decaps=199910 us | heap=220748[0m
+[0;32mI (45862) BENCH: Phase4-Hybrid iter=54/1000 | KeyGen=196272 us | Encaps=384677 us | Decaps=199739 us | heap=220748[0m
+[0;32mI (46652) BENCH: Phase4-Hybrid iter=55/1000 | KeyGen=196227 us | Encaps=384744 us | Decaps=200044 us | heap=220748[0m
+[0;32mI (47432) BENCH: Phase4-Hybrid iter=56/1000 | KeyGen=196362 us | Encaps=384832 us | Decaps=199681 us | heap=220748[0m
+[0;32mI (48212) BENCH: Phase4-Hybrid iter=57/1000 | KeyGen=196303 us | Encaps=384503 us | Decaps=199411 us | heap=220748[0m
+[0;32mI (48992) BENCH: Phase4-Hybrid iter=58/1000 | KeyGen=196106 us | Encaps=384917 us | Decaps=199970 us | heap=220748[0m
+[0;32mI (49772) BENCH: Phase4-Hybrid iter=59/1000 | KeyGen=196323 us | Encaps=384778 us | Decaps=199620 us | heap=220748[0m
+[0;32mI (50552) BENCH: Phase4-Hybrid iter=60/1000 | KeyGen=196263 us | Encaps=384764 us | Decaps=199932 us | heap=220748[0m
+[0;32mI (51332) BENCH: Phase4-Hybrid iter=61/1000 | KeyGen=196381 us | Encaps=384633 us | Decaps=199606 us | heap=220748[0m
+[0;32mI (52112) BENCH: Phase4-Hybrid iter=62/1000 | KeyGen=196228 us | Encaps=384689 us | Decaps=199556 us | heap=220748[0m
+[0;32mI (52902) BENCH: Phase4-Hybrid iter=63/1000 | KeyGen=196085 us | Encaps=384520 us | Decaps=199736 us | heap=220748[0m
+[0;32mI (53682) BENCH: Phase4-Hybrid iter=64/1000 | KeyGen=196218 us | Encaps=384887 us | Decaps=199925 us | heap=220748[0m
+[0;32mI (54462) BENCH: Phase4-Hybrid iter=65/1000 | KeyGen=196189 us | Encaps=384769 us | Decaps=199775 us | heap=220748[0m
+[0;32mI (55242) BENCH: Phase4-Hybrid iter=66/1000 | KeyGen=196353 us | Encaps=384762 us | Decaps=199801 us | heap=220748[0m
+[0;32mI (56022) BENCH: Phase4-Hybrid iter=67/1000 | KeyGen=196310 us | Encaps=384639 us | Decaps=199536 us | heap=220748[0m
+[0;32mI (56802) BENCH: Phase4-Hybrid iter=68/1000 | KeyGen=196346 us | Encaps=384737 us | Decaps=199873 us | heap=220748[0m
+[0;32mI (57582) BENCH: Phase4-Hybrid iter=69/1000 | KeyGen=196305 us | Encaps=384450 us | Decaps=199703 us | heap=220748[0m
+[0;32mI (58372) BENCH: Phase4-Hybrid iter=70/1000 | KeyGen=196338 us | Encaps=384548 us | Decaps=199712 us | heap=220748[0m
+[0;32mI (59152) BENCH: Phase4-Hybrid iter=71/1000 | KeyGen=196304 us | Encaps=384657 us | Decaps=199894 us | heap=220748[0m
+[0;32mI (59932) BENCH: Phase4-Hybrid iter=72/1000 | KeyGen=196400 us | Encaps=384515 us | Decaps=199631 us | heap=220748[0m
+[0;31mE (60682) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (60682) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (60682) task_wdt: Tasks currently running:[0m
+[0;31mE (60682) task_wdt: CPU 0: opt_base[0m
+[0;31mE (60682) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (60682) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x400DA477:0x3FFB0FF0 0x400DA83C:0x3FFB1010 0x40082E51:0x3FFB1040 0x4000BFED:0x3FFC7A40 0x400864DA:0x3FFC7A50 0x400825AB:0x3FFC7A70 0x400DFC33:0x3FFC7A90 0x400DFAEB:0x3FFC7AB0 0x400DC8E6:0x3FFC7AE0 0x400DD56C:0x3FFC7B00 0x400DD8B6:0x3FFC7B30 0x400DD90D:0x3FFC7BA0 0x400DD9BD:0x3FFC7CE0 0x400DDB17:0x3FFC7D30 0x400DDB35:0x3FFC7D70 0x400DDB5A:0x3FFC7DA0 0x400D6E1D:0x3FFC7DD0 0x400D71E9:0x3FFC81D0 0x40086179:0x3FFC81F0
+
+[0;32mI (60772) BENCH: Phase4-Hybrid iter=73/1000 | KeyGen=196306 us | Encaps=384455 us | Decaps=260200 us | heap=220748[0m
+[0;32mI (61552) BENCH: Phase4-Hybrid iter=74/1000 | KeyGen=196475 us | Encaps=384725 us | Decaps=199636 us | heap=220748[0m
+[0;32mI (62332) BENCH: Phase4-Hybrid iter=75/1000 | KeyGen=196268 us | Encaps=384765 us | Decaps=200008 us | heap=220748[0m
+[0;32mI (63112) BENCH: Phase4-Hybrid iter=76/1000 | KeyGen=196390 us | Encaps=384665 us | Decaps=199805 us | heap=220748[0m
+[0;32mI (63902) BENCH: Phase4-Hybrid iter=77/1000 | KeyGen=196263 us | Encaps=384759 us | Decaps=199907 us | heap=220748[0m
+[0;32mI (64682) BENCH: Phase4-Hybrid iter=78/1000 | KeyGen=196326 us | Encaps=384728 us | Decaps=199815 us | heap=220748[0m
+[0;32mI (65462) BENCH: Phase4-Hybrid iter=79/1000 | KeyGen=196330 us | Encaps=384539 us | Decaps=199696 us | heap=220748[0m
+[0;32mI (66242) BENCH: Phase4-Hybrid iter=80/1000 | KeyGen=196218 us | Encaps=384636 us | Decaps=199791 us | heap=220748[0m
+[0;32mI (67022) BENCH: Phase4-Hybrid iter=81/1000 | KeyGen=196339 us | Encaps=384563 us | Decaps=199989 us | heap=220748[0m
